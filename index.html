@@ -1,0 +1,2160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/jpeg;base64,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">
+    <link rel="stylesheet" href="style.css">
+    <title>Canal estudo Biblico</title>
+    <style>
+
+body{
+    background-color: black;
+    background-image: url("starfall-gif-20.gif");
+}
+
+.caixa{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 2s;
+    background-color: aqua;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 15%;
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
+    
+
+
+}
+
+#input{
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.btn{
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 5px;
+}
+marquee{
+    
+    color: aliceblue;
+    font-size: 25px;
+}
+a{
+    color: black;
+
+}
+a:hover{
+    color: blue;
+}
+
+.rest{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 5s;
+     width: fit-content;
+     margin-left: 25%;
+     color: aliceblue;
+}
+
+.menu{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 5s;
+    background-color: rgba(6, 239, 239, 0.869);
+    margin-left: 80px;
+    font-size: 25px;
+    
+}
+.princ{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 2s;
+    background-color: rgb(17, 247, 33);
+    margin-left: 100px;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 15px;
+}
+.princ:hover{
+    color: rgb(27, 12, 242);
+}
+.pmenu1{
+    cursor: pointer;
+    font-size: 20px;
+    color: aliceblue;
+}
+.pmenu1:hover{
+    color: rgb(255, 0, 0);
+}
+.pmenu2{
+    cursor: pointer;
+    font-size: 20px;
+    color: aliceblue;
+}
+.pmenu2:hover{
+    color: rgb(255, 0, 0);
+}
+
+.pmenu4{
+    cursor: pointer;
+    font-size: 20px;
+    color: aliceblue;
+}
+.pmenu4:hover{
+    color: rgb(255, 0, 0);
+}
+
+.princ1{
+    cursor: pointer;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 2s;
+    background-color: rgb(17, 247, 33);
+    width: fit-content;
+    margin-left: 190px;
+    border-radius: 15px;
+    margin-top: -280px;
+    padding: 15px;
+}
+.princ1:hover{
+    color: blue;
+}
+.princ2{
+    cursor: pointer;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 2s;
+    background-color: rgb(17, 247, 33);
+    width: fit-content;
+    margin-left: 200px;
+    padding: 15px;
+    box-sizing: 15px;
+    
+}
+.princ2:hover{
+    color: blue;
+}
+.harpa{
+    position: absolute;
+    cursor: pointer;
+    background-color: rgb(17, 247, 33);
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 2s;
+    margin-left: 300px;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: -140px;
+
+}
+
+
+.l1{
+cursor: pointer;
+}
+.l1:hover{
+color: blue;
+}
+.l2{
+cursor: pointer;
+}
+.l2:hover{
+color: blue;
+}
+.l3{
+cursor: pointer;
+}
+.l3:hover{
+color: blue;
+}
+.l4{
+cursor: pointer;
+}
+.l4:hover{
+color: blue;
+}
+.l5{
+cursor: pointer;
+}
+.l5:hover{
+color: blue;
+}
+.l6{
+cursor: pointer;
+}
+.l6:hover{
+color: blue;
+}
+.l7{
+cursor: pointer;
+}
+.l7:hover{
+color: blue;
+}
+.l8{
+cursor: pointer;
+}
+.l8:hover{
+color: blue;
+}
+.l9{
+cursor: pointer;
+}
+.l9:hover{
+color: blue;
+}
+.l10{
+cursor: pointer;
+}
+.l10:hover{
+color: blue;
+}
+.l11{
+cursor: pointer;
+}
+.l11:hover{
+color: blue;
+}
+.l12{
+cursor: pointer;
+}
+.l12:hover{
+color: blue;
+}
+.l13{
+cursor: pointer;
+}
+.l13:hover{
+color: blue;
+}
+.l14{
+cursor: pointer;
+}
+.l14:hover{
+color: blue;
+}
+.l15{
+cursor: pointer;
+}
+.l15:hover{
+color: blue;
+}
+.l16{
+cursor: pointer;
+}
+.l16:hover{
+color: blue;
+}
+.l17{
+cursor: pointer;
+}
+.l17:hover{
+color: blue;
+}
+.l18{
+cursor: pointer;
+}
+.l18:hover{
+color: blue;
+}
+.l19{
+cursor: pointer;
+}
+.l19:hover{
+color: blue;
+}
+.l20{
+cursor: pointer;
+}
+.l20:hover{
+color: blue;
+}
+.l21{
+cursor: pointer;
+}
+.l21:hover{
+color: blue;
+}
+.l22{
+cursor: pointer;
+}
+.l22:hover{
+color: blue;
+}
+.l23{
+cursor: pointer;
+}
+.l23:hover{
+color: blue;
+}
+.l24{
+cursor: pointer;
+}
+.l24:hover{
+color: blue;
+}
+.leitura{
+display: none;
+background-color: rgb(17, 247, 33);
+padding: 20px;
+border-radius: 15px;
+margin-top: -50px;
+}
+.h4{
+
+font-size: 25px;
+}
+.iframe{
+position: relative;
+height: 100%;
+width: 100%;
+margin-top: -10px;
+margin-left: 150px;
+}
+.divh{
+display: none;
+position: absolute;
+width: 30%;
+height: 80%;
+margin-left: 30%;
+margin-top: -250px;
+border-radius: 20%;
+background-color: rgb(12, 237, 229);
+}
+
+
+.hino7{
+
+
+width: 100%;
+height: 300%;
+margin-left: -1%;
+margin-top: -100px;
+
+
+}
+.musica{
+display: none;
+position: absolute;
+background-image: url("mar.gif");
+height: 280px;
+width: 300px;
+margin-top: -200px;
+margin-left: 280px;
+}
+#audio{
+margin-top: 230px;
+position: absolute;
+
+}
+
+
+.show{
+opacity: 1;
+filter: blur(0);
+transform: translateX();
+transition: all 1s;
+}
+.temp{
+color: brown;
+}
+
+
+
+
+
+@media(max-width: 420px){
+#input{
+    font-size: 15px;
+}
+.menu{
+    width: 100%;
+    font-size: 15px;
+}
+.caixa{
+    margin-top: 25%;
+    margin-left: 50%;
+}
+.divh{
+    margin-left: 10%;
+    width: 100%;
+}
+.musica{
+  margin-left: 80px;
+}
+
+
+
+
+
+
+}    
+
+
+
+
+    </style>
+    
+
+  
+
+</head>
+<body>
+   
+ <!--  <div  align=center style="color: white;">Visualizações&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='https://contador.s12.com.br/img-368577cYC3ddWD5C-17.gif' border='0' alt='contador'></a><script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=368577cYC3ddWD5C'></script></div>
+   --->
+    <br> 
+    <br>
+    
+    <marquee class="marq" behavior="" direction=""></marquee>
+   
+    
+    <h1 class="rest" ></h1>
+    
+    
+    <section class="caixa">
+        <p style="color: rgb(1, 0, 11); font-size: 25px;padding: 5px;">Coloque seu Nome</p>
+          <input id="input" type="text">
+        <button class="btn" onclick="buscar()">Entrar</button>
+    </section>
+
+     <iframe class="iframe" src="" frameborder="0"></iframe>
+    <div class="menu" >
+        <table class="tab">
+            <tr>
+                <td>&nbsp;&nbsp;&nbsp;
+                  <a class="pmenu1">Estudos<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                   <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                    </svg></a>&nbsp; 
+                </td>
+                <td>
+                  <a class="pmenu2">Quiz biblico</a>&nbsp;&nbsp;  
+                </td>
+                
+                <td>
+                    <a class="pmenu4">24 hinos da Harpa <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-music-note-beamed" viewBox="0 0 16 16"><path d="M6 13c0 1.105-1.12 2-2.5 2S1 14.105 1 13s1.12-2 2.5-2 2.5.896 2.5 2m9-2c0 1.105-1.12 2-2.5 2s-2.5-.895-2.5-2 1.12-2 2.5-2 2.5.895 2.5 2"/><path fill-rule="evenodd" d="M14 11V2h1v9zM6 3v10H5V3z"/<path d="M5 2.905a1 1 0 0 1 .9-.995l8-.8a1 1 0 0 1 1.1.995V3L5 4z"/></svg></a>  
+                  </td>
+            </tr>
+            
+                
+            
+        </table>
+        
+    </div>
+       <div class="princ">
+          <a href="https://eduardobandeira57.github.io/canal_biblico/"> a besta que subiu do Mar Apocalipse 13</a><br><br>
+            <a href="https://eduardobandeira57.github.io/Samaritana/">Os 5 maridos da Samaritana</a> <br><br>
+              <a href="https://eduardobandeira57.github.io/Apocalipse6/">Apocalipse6</a><br><br>
+           <a href="https://eduardobandeira57.github.io/carta-igreja-Efesios/">1º carta igreja Efesios</a><br><br>
+           <a href="https://eduardobandeira57.github.io/2-carta-Igreja-Esmirna/">2° carta Igreja Esmirna</a><br><br>
+           <a href="3-Igreja.html">3° carta Igreja Pergamos</a><br><br>
+           <a href="4-igreja.html">4° carta Igreja tiatira </a><br><br>
+           
+                 
+                    
+                
+        </div>
+                 <div class="princ1">
+                    <a href="https://eduardobandeira57.github.io/Quiz/">1° Quiz biblico </a><br><br>
+                     <a href="https://eduardobandeira57.github.io/2-Quiz-Biblico/">2° Quiz biblico </a><br><br>
+                     <a href="4-Quiz-Biblico.html">3° Quiz biblico </a><br><br>
+                     
+                 
+                  </div>
+                  
+    
+    </div>
+    <div class="harpa">
+        <p class="l1">Conversão</p>
+        <p class="l2">Cristo o Fiel Amigo</p>
+        <p class="l3">De Valor em Valor</p>
+        <p class="l4">Em Fervente Oração</p>
+        <p class="l5">Firme nas Promessas</p>
+        <p class="l6">Grato a Ti</p>
+        <p class="l7">Guarda o Contacto</p>
+        <p class="l8">Guia-me Sempre Meu Senhor</p>
+        <p class="l9">Jesus o Bom Amigo</p>
+        <p class="l10">Mais Perto Meu Deus de Ti</p>
+        <p class="l11">Oh Jesus me Ama</p>
+        <p class="l12">Os Guerreiros se Preparam</p>
+        <p class="l13">Pelo Sangue</p>
+        <p class="l14">Por Que Ele Vive</p>
+        <p class="l15">Se Cristo Comigo Vai</p>
+        <p class="l16">Ser Valente</p>
+        <p class="l17">Sossegai</p>
+        <p class="l18">Tempo de Segar</p>
+        <p class="l19">Vem Cear</p>
+        <p class="l20">A Face Adorada de Jesus</p>
+        <p class="l21">A Mensagem da Cruz</p>
+        <p class="l22">Alma Abatida</p>
+        <p class="l23">Alvo Mais Que a Neve</p>
+        <p class="l24">Chuva de Gracas</p>
+
+
+
+    </div>
+
+
+     <h4 class="h4" align="center" style="color: white;"></h4>
+      <div class="divh">
+     <iframe class="hino7" src="7hino.gif" frameborder="0"></iframe>
+      </div>
+     <div class="leitura">
+   <h2 class="cont"style="color: black;"></h2>
+        
+
+      
+
+
+   <audio  src="" controls ></audio>
+      
+
+
+   <h3 style="color: black;">Jeremias 33</h3>
+   <br>
+   <p style="color: black;">1 E veio a palavra do SENHOR a Jeremias, segunda vez, estando ele ainda encarcerado no pátio da guarda, dizendo: </p>
+   <p style="color: black;">2 Assim diz o Senhor que faz isto, o Senhor que forma isto, para o estabelecer; o Senhor é o seu nome. </p>
+   <p style="color: black;">3 Clama a mim, e responder-te-ei, e anunciar-te-ei coisas grandes e firmes que não sabes. </p>
+   <p style="color: black;">4 Porque assim diz o Senhor, o Deus de Israel, acerca das casas desta cidade, e das casas dos reis de Judá, que foram derrubadas com os aríetes e à espada </p>
+   <p style="color: black;">5 Eles entraram a pelejar contra os caldeus, mas isso é para os encher de cadáveres de homens, que feri na minha ira e no meu furor; porquanto escondi o meu rosto desta cidade, por causa de toda a sua maldade. </p>
+   <p style="color: black;">6 Eis que eu trarei a ela saúde e cura, e os sararei, e lhes manifestarei abundância de paz e de verdade. </p>
+   <p style="color: black;">7 E removerei o cativeiro de Judá e o cativeiro de Israel, e os edificarei como ao princípio. </p>
+   <p style="color: black;">8 E os purificarei de toda a sua maldade com que pecaram contra mim; e perdoarei todas as suas maldades, com que pecaram e transgrediram contra mim; </p>
+   <p style="color: black;">9 E este lugar me servirá de nome, de gozo, de louvor, e de glória, entre todas as nações da terra, que ouvirem todo o bem que eu lhe faço; e espantar-se-ão e perturbar-se-ão por causa de todo o bem, e por causa de toda a paz que eu lhe dou. </p>
+   <p style="color: black;">10 Assim diz o Senhor: Neste lugar de que vós dizeis que está desolado, e sem homem, sem animal nas cidades de Judá, e nas ruas de Jerusalém, que estão assoladas, sem homem, sem morador, sem animal, ainda se ouvirá: </p>
+   <p style="color: black;">11 A voz de gozo, e a voz de alegria, a voz do esposo e a voz da esposa, e a voz dos que dizem: Louvai ao Senhor dos Exércitos, porque bom é o Senhor, porque a sua benignidade dura para sempre; dos que trazem ofertas de ação de graças à casa do Senhor; pois farei voltar os cativos da terra como ao princípio, diz o Senhor. </p>
+   <p style="color: black;">12 Assim diz o Senhor dos Exércitos: Ainda neste lugar, que está deserto, sem homem nem animal, e em todas as suas cidades, haverá uma morada de pastores, que façam repousar aos seus rebanhos. </p>
+   <p style="color: black;">13 Nas cidades das montanhas, nas cidades das planícies, e nas cidades do sul, e na terra de Benjamim, e nos contornos de Jerusalém, e nas cidades de Judá, ainda passarão os rebanhos pelas mãos dos contadores, diz o Senhor. </p>
+   <p style="color: black;">14 Eis que vêm dias, diz o Senhor, em que cumprirei a boa palavra que falei à casa de Israel e à casa de Judá; </p>
+   <p style="color: black;">15 Naqueles dias e naquele tempo farei brotar a Davi um Renovo de justiça, e ele fará juízo e justiça na terra. </p>
+   <p style="color: black;">16 Naqueles dias Judá será salvo e Jerusalém habitará seguramente; e este é o nome com o qual Deus a chamará: O Senhor é a nossa justiça. </p>
+   <p style="color: black;">17 Porque assim diz o Senhor: Nunca faltará a Davi homem que se assente sobre o trono da casa de Israel; </p>
+   <p style="color: black;">18 Nem aos sacerdotes levíticos faltará homem diante de mim, que ofereça holocausto, queime oferta de alimentos e faça sacrifício todos os dias. </p>
+   <p style="color: black;">19 E veio a palavra do Senhor a Jeremias, dizendo: </p>
+   <p style="color: black;">20 Assim diz o Senhor: Se puderdes invalidar a minha aliança com o dia, e a minha aliança com a noite, de tal modo que não haja dia e noite a seu tempo, </p>
+   <p style="color: black;">21 Também se poderá invalidar a minha aliança com Davi, meu servo, para que não tenha filho que reine no seu trono; como também com os levitas, sacerdotes, meus ministros. </p>
+   <p style="color: black;">22 Como não se pode contar o exército dos céus, nem medir-se a areia do mar, assim multiplicarei a descendência de Davi, meu servo, e os levitas que ministram diante de mim. </p>
+   <p style="color: black;">23 E veio ainda a palavra do Senhor a Jeremias, dizendo: </p>
+   <p style="color: black;">24 Porventura não tens visto o que este povo está dizendo: As duas gerações, que o Senhor escolheu, agora as rejeitou? Assim desprezam o meu povo, como se não fora mais uma nação diante deles. </p>
+   <p style="color: black;">25 Assim diz o Senhor: Se a minha aliança com o dia e com a noite não permanecer, e eu não puser as ordenanças dos céus e da terra, </p>
+   <p style="color: black;">26 Também rejeitarei a descendência de Jacó, e de Davi, meu servo, para que não tome da sua descendência os que dominem sobre a descendência de Abraão, Isaque, e Jacó; porque removerei o seu cativeiro, e apiedar-me-ei deles. </p>
+   
+    <br>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div class="musica">
+      <p class="temp"></p>
+    <audio id="audio" src="" controls >
+  </div>
+
+    
+
+  <script >
+    const myObserver = new IntersectionObserver((entryes) =>{
+
+entryes.forEach((entry) =>{
+
+ if(entry.isIntersecting){
+    entry.target.classList.add("show")
+
+ }else{
+    entry.target.classList.remove("caixa")
+
+ }
+
+
+
+})
+
+
+
+
+});
+
+const elements=document.querySelectorAll(".caixa")
+elements.forEach((element) => myObserver.observe(element))
+
+devoc=0
+var data="Devocional: 17/01/2025"
+document.querySelector(".cont").textContent=data
+
+
+
+function buscar(){
+ var nome =document.getElementById("input").value
+
+ if(nome==""){
+    alert("È obrigatotio colocar o nome")
+ }else{
+     document.querySelector(".iframe").style.position="absolute"
+     document.querySelector(".iframe").src="74US.gif"
+     document.querySelector(".h4").textContent="Esculte 7 hinos e receba á Palavra"
+     document.querySelector(".rest").style.backgroundImage = 'url("https://dhamaka-music.com/BZ/img/names-min111.gif")'
+     document.querySelector(".rest").textContent="Bem Vindo! "+"  "+nome
+     document.querySelector(".marq").textContent="Edu.App    WhatasApp   81984242796"
+
+    document.querySelector(".caixa").style.display="none"
+    document.querySelector(".menu").classList.add("show")
+    document.querySelector(".rest").classList.add("show")
+
+var sauda= setInterval(() => {
+  var nome =document.querySelector("#input").value
+  speechSynthesis.speak(new SpeechSynthesisUtterance("seja muito bem vindo "+nome))
+  
+  clearInterval(sauda)
+   var time=0
+   var set1 = setInterval(() => {
+     
+     if (time==0) {
+     speechSynthesis.speak(new SpeechSynthesisUtterance(" estudo voce escolhe os estudos"))
+    
+     document.querySelector(".pmenu1").style.backgroundColor= "gold";
+     time++
+     
+
+       
+     } else {
+       
+      document.querySelector(".pmenu1").style.backgoundColor="";
+       clearInterval(set1)
+
+     var set2 = setInterval(() => {
+       
+       if (time==1) {
+         speechSynthesis.speak(new SpeechSynthesisUtterance("Quiz voce escolhe o quiz  que voce quiser jogar"))
+        
+         document.querySelector(".pmenu2").style.backgroundColor= "gold";
+         time++
+         
+       } else {
+         
+           document.querySelector(".pmenu2").style.backgoundColor="";
+        clearInterval(set2)
+        var set3 = setInterval(() => {
+         
+           if (time==2) {
+             speechSynthesis.speak(new SpeechSynthesisUtterance("Hinos voce tem 24 hinos para escolher de um em um até completar 7 hinos para receber a palavra devocional"))
+             
+              document.querySelector(".pmenu4").style.backgroundColor= "gold";
+             time++
+             
+           } else {
+              document.querySelector(".pmenu4").style.backgoundColor="";
+              clearInterval(set3)
+              var set4= setInterval(() => {
+               if (time==3) {
+                 speechSynthesis.speak(new SpeechSynthesisUtterance(" este site não tem laick pois toda Honra e Glorias e para o Senhor Jesus"))
+                 clearInterval(set4)
+               }
+               
+              }, 3000);
+             
+           }
+
+
+         
+        }, 3000);
+         
+       }
+       
+     }, 3000);
+       
+     }
+     
+     
+   }, 5000);
+
+}, 10);
+
+
+var anime=setInterval(() => {
+ document.querySelector(".iframe").src=""
+ document.querySelector(".rest").style.backgroundImage = 'url(...)'
+ document.querySelector(".iframe").style.position="relative"
+ document.querySelector(".iframe").style.display="none"
+
+ 
+
+
+clearInterval(anime)
+}, 10000);
+
+
+
+
+}
+
+}
+let div1=document.querySelector(".pmenu1");
+let fechardiv1=document.querySelector(".princ");
+div1.addEventListener("mouseover",function(){
+ document.querySelector(".princ").classList.add("show")
+ document.querySelector(".princ1").classList.remove("show")
+ document.querySelector(".harpa").classList.remove(show)
+ 
+});
+
+fechardiv1.addEventListener("mouseleave",function(){
+ 
+ document.querySelector(".princ").classList.remove("show")
+
+});
+
+let div2=document.querySelector(".pmenu2");
+let fechardiv2=document.querySelector(".princ1");
+div2.addEventListener("mouseover",function(){
+ document.querySelector(".princ1").classList.add("show")
+ document.querySelector(".princ").classList.remove("show")
+ document.querySelector(".harpa").classList.remove("show")
+
+})
+
+fechardiv2.addEventListener("mouseleave",function(){
+ document.querySelector(".princ1").classList.remove("show")
+ 
+
+});
+
+
+let div4=document.querySelector(".pmenu4");
+let fechardiv4=document.querySelector(".harpa");
+div4.addEventListener("mouseover",function(){
+ document.querySelector(".princ1").classList.remove("show")
+ document.querySelector(".princ").classList.remove("show")
+ document.querySelector(".harpa").classList.add("show")
+
+
+})
+
+fechardiv4.addEventListener("mouseleave",function(){
+ 
+ document.querySelector(".harpa").classList.remove("show")
+
+});
+
+const audio=document.getElementById("audio")
+
+
+var l1=document.querySelector(".l1")
+
+
+
+
+l1.addEventListener("click",function(){
+
+audio.src="Conversao.mp3"
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+  var hor="";
+  var min="";
+ var seg="";
+ var correntTimerhor="";
+ var correntTimermin="";
+ var correntTimerseg="";
+
+
+var time=  setInterval(() => {
+
+
+
+
+
+ hor= Math.floor(audio.duration / 3600)
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     
+      clearInterval(time)
+
+    }
+
+      
+   
+ }, 100);
+ 
+
+}
+
+
+
+})
+
+
+var l2=document.querySelector(".l2")
+
+l2.addEventListener("click",function(){
+
+audio.src="Cristo o Fiel Amigo.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+}
+
+
+
+})
+var l3=document.querySelector(".l3")
+
+l3.addEventListener("click",function(){
+
+audio.src="De Valor em Valor.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+}
+
+
+
+})
+var l4=document.querySelector(".l4")
+
+l4.addEventListener("click",function(){
+
+audio.src="Em Fervente Oracao.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+    
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+}
+
+
+
+})
+var l5=document.querySelector(".l5")
+
+l5.addEventListener("click",function(){
+
+audio.src="Firme nas Promessas.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+    
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+}
+
+
+
+})
+var l6=document.querySelector(".l6")
+
+l6.addEventListener("click",function(){
+
+audio.src="Grato a Ti.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+}
+
+
+
+})
+var l7=document.querySelector(".l7")
+
+l7.addEventListener("click",function(){
+
+audio.src="Guarda o Contacto.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+}
+
+
+
+})
+var l8=document.querySelector(".l8")
+
+l8.addEventListener("click",function(){
+
+audio.src="Guia-me Sempre Meu Senhor.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+}
+
+
+
+})
+var l9=document.querySelector(".l9")
+
+l9.addEventListener("click",function(){
+
+audio.src="Jesus o Bom Amigo.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+}
+
+
+
+})
+var l10=document.querySelector(".l10")
+
+l10.addEventListener("click",function(){
+
+audio.src="Mais Perto Meu Deus de Ti.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+    
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+}
+
+
+
+})
+var l11=document.querySelector(".l11")
+
+l11.addEventListener("click",function(){
+
+audio.src="Oh Jesus me Ama.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+
+}
+
+
+
+})
+var l12=document.querySelector(".l12")
+
+l12.addEventListener("click",function(){
+
+audio.src="os guerreiro.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+}
+
+
+
+})
+var l13=document.querySelector(".l13")
+
+l13.addEventListener("click",function(){
+
+audio.src="Pelo Sangue.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+
+}
+
+
+
+})
+var l14=document.querySelector(".l14")
+
+l14.addEventListener("click",function(){
+
+audio.src="Por Que Ele Vive.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+}
+
+
+
+})
+var l15=document.querySelector(".l15")
+
+l15.addEventListener("click",function(){
+
+audio.src="Se Cristo Comigo Vai.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+    
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+}
+
+
+
+})
+var l16=document.querySelector(".l16")
+
+l16.addEventListener("click",function(){
+
+audio.src="Ser Valente.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+}
+
+
+
+})
+var l17=document.querySelector(".l17")
+
+l17.addEventListener("click",function(){
+
+audio.src="Sossegai.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+
+}
+
+
+
+})
+var l18=document.querySelector(".l18")
+
+l18.addEventListener("click",function(){
+
+audio.src="Tempo de Sega.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+    
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+
+}
+
+
+
+})
+var l19=document.querySelector(".l19")
+
+l19.addEventListener("click",function(){
+
+audio.src="Vem Cear.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+    
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+
+}
+
+
+
+})
+var l20=document.querySelector(".l20")
+
+l20.addEventListener("click",function(){
+
+audio.src="A Face Adorada de Jesus.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+}
+
+
+
+})
+var l21=document.querySelector(".l21")
+
+l21.addEventListener("click",function(){
+
+audio.src="A Mensagem da Cruz.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+
+}
+
+
+
+})
+var l22=document.querySelector(".l22")
+
+l22.addEventListener("click",function(){
+
+audio.src="Alma Abatida.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+    
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+
+}
+
+
+
+})
+var l23=document.querySelector(".l23")
+
+l23.addEventListener("click",function(){
+
+audio.src="Alvo Mais Que a Neve.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+    
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+
+}
+
+
+
+})
+var l24=document.querySelector(".l24")
+
+l24.addEventListener("click",function(){
+
+audio.src="Chuva de Gracas.mp3"
+
+if(devoc==6){
+ document.querySelector(".divh").style.display="block"
+ document.querySelector(".harpa").classList.remove("show")
+ var anime= setInterval(() => {
+     document.querySelector(".divh").style.display="none"
+     document.querySelector(".h4").textContent=""
+       document.querySelector(".leitura").style.display="block"
+     document.querySelector(".cont").textContent=data
+    devoc=0
+    clearInterval(anime)
+     
+ }, 15000);
+ 
+
+}else{
+document.querySelector(".harpa").classList.remove("show")
+
+document.querySelector(".musica").style.display="block"
+var time=  setInterval(() => {
+hor= Math.floor(audio.duration / 3600)
+
+  min= Math.floor(audio.duration / 60)
+  seg= Math.floor((((audio.duration / 60) % 1) *60))
+
+  correntTimerhor= Math.floor((audio.currentTime / 3600))
+  correntTimermin= Math.floor((audio.currentTime / 60))
+   correntTimerseg= Math.floor(((((audio.currentTime)/60)%1)*60) )
+
+
+   
+     var temp= correntTimermin+":"+correntTimerseg
+     var final= min+":"+seg
+   if (temp==final) {
+      devoc++
+      document.querySelector(".temp").innerHTML=devoc
+      document.querySelector(".musica").style.display="none"
+     clearInterval(time)
+
+    }
+
+
+   }, 100);
+
+
+
+
+
+}
+
+
+
+})
+
+
+
+
+
+
+
+
+  </script>
+</body>
+     
+</html>
