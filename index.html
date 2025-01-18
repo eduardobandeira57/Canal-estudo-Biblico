@@ -631,10 +631,72 @@ elements.forEach((element) => myObserver.observe(element))
 devoc=0
 var data="Devocional: 18/01/2025"
 document.querySelector(".cont").textContent=data
+var data = new Date();
+ var horas=0
+        document.body.style.backgroundImage="url('...')" 
+       
+           setInterval(() => {
+            
+            horas=  data.getHours();
+          
+            
+            if(horas==0){
+                document.body.style.backgroundImage="url('https://eduardobandeira57.github.io/image/0.jpg')" 
+            };
+            if(horas==4){
+                document.body.style.backgroundImage="url('https://eduardobandeira57.github.io/image/4.jpg')" 
+            };
+            if(horas==10){
+                document.body.style.backgroundImage="url('https://eduardobandeira57.github.io/image/10.jpg')" 
+            };
+            if(horas==12){
+                document.body.style.backgroundImage="url('https://eduardobandeira57.github.io/image/12.jpg')" 
+            };
+            if(horas==17){
+                document.body.style.backgroundImage="url('https://eduardobandeira57.github.io/image/17.jpg')" 
+            };
+            if(horas==18){
+                document.body.style.backgroundImage="url('https://eduardobandeira57.github.io/image/18.jpg')" 
+            };
+            if(horas==19){
+                document.body.style.backgroundImage="url('https://eduardobandeira57.github.io/image/19.jpg')" 
+            };
+            if(horas==20){
+                document.body.style.backgroundImage="url('https://eduardobandeira57.github.io/image/20.jpg')" 
+            };
+            
+           
+        }, 1000);      
 
 
 
 function buscar(){
+     var array=[
+    /*0*/"boa madrugada",
+    /*1*/"boa madrugada",
+   /*2*/"boa madrugada",
+   /*3*/"boa madrugada",
+   /*4*/"boa madrugada",
+   /*5*/"bom dia",
+   /*6*/"bom dia",
+   /*7*/"bom dia",
+   /*8*/"bom dia",
+    /*9*/"bom dia",
+    /*10*/"bom dia",
+    /*11*/"bom dia",
+    /*12*/"bom dia",
+    /*13*/"boa tarde",
+    /*14*/"boa tarde",
+    /*15*/"boa tarde",
+    /*16*/"boa tarde",
+    /*17*/"boa tarde",
+    /*18*/"boa noite",
+    /*19*/"boa noite",
+    /*20*/"boa noite",
+    /*21*/"boa noite",
+    /*22*/"boa noite",
+    /*23*/"boa noite",
+  ]
  var nome =document.getElementById("input").value
 
  if(nome==""){
@@ -653,7 +715,7 @@ function buscar(){
 
 var sauda= setInterval(() => {
   var nome =document.querySelector("#input").value
-  speechSynthesis.speak(new SpeechSynthesisUtterance("seja muito bem vindo "+nome))
+  speechSynthesis.speak(new SpeechSynthesisUtterance(array[horas]+"  "+"seja muito bem vindo "+nome))
   
   clearInterval(sauda)
    var time=0
