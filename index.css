@@ -1,0 +1,411 @@
+body{
+    background-color: black;
+    background-image: url("starfall-gif-20.gif");
+}
+
+.caixa{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 2s;
+    background-color: aqua;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 15%;
+    margin-left: 25%;
+    width: 50%;
+    height: 50%;
+    
+
+
+}
+
+#input{
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.btn{
+    cursor: pointer;
+    font-size: 25px;
+    margin-top: 10px;
+    border-radius: 15px;
+    padding: 5px;
+}
+marquee{
+    
+    color: aliceblue;
+    font-size: 25px;
+}
+a{
+    color: black;
+
+}
+a:hover{
+    color: blue;
+}
+
+.rest{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 5s;
+     width: fit-content;
+     margin-left: 25%;
+     color: aliceblue;
+}
+
+.menu{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 5s;
+    background-color: rgba(249, 40, 17, 0.869);
+    margin-left: 80px;
+    font-size: 25px;
+    
+}
+.princ{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 2s;
+    background-color: rgb(17, 247, 33);
+    margin-left: 100px;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 15px;
+}
+.princ:hover{
+    color: rgb(27, 12, 242);
+}
+.pmenu1{
+    cursor: pointer;
+    font-size: 20px;
+    color: aliceblue;
+}
+.pmenu1:hover{
+    color: rgb(255, 0, 0);
+}
+.pmenu2{
+    cursor: pointer;
+    font-size: 20px;
+    color: aliceblue;
+}
+.pmenu2:hover{
+    color: rgb(255, 0, 0);
+}
+
+.pmenu4{
+    cursor: pointer;
+    font-size: 20px;
+    color: aliceblue;
+}
+.pmenu4:hover{
+    color: rgb(255, 0, 0);
+}
+
+.princ1{
+    cursor: pointer;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 2s;
+    background-color: rgb(17, 247, 33);
+    width: fit-content;
+    margin-left: 190px;
+    border-radius: 15px;
+    margin-top: -280px;
+    padding: 15px;
+}
+.princ1:hover{
+    color: blue;
+}
+.princ2{
+    cursor: pointer;
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 2s;
+    background-color: rgb(17, 247, 33);
+    width: fit-content;
+    margin-left: 200px;
+    padding: 15px;
+    box-sizing: 15px;
+    
+}
+.princ2:hover{
+    color: blue;
+}
+.harpa{
+    position: absolute;
+    cursor: pointer;
+    background-color: rgb(17, 247, 33);
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100px);
+    transition: all 2s;
+    margin-left: 300px;
+    width: fit-content;
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: -140px;
+
+}
+
+
+.l1{
+cursor: pointer;
+}
+.l1:hover{
+color: blue;
+}
+.l2{
+cursor: pointer;
+}
+.l2:hover{
+color: blue;
+}
+.l3{
+cursor: pointer;
+}
+.l3:hover{
+color: blue;
+}
+.l4{
+cursor: pointer;
+}
+.l4:hover{
+color: blue;
+}
+.l5{
+cursor: pointer;
+}
+.l5:hover{
+color: blue;
+}
+.l6{
+cursor: pointer;
+}
+.l6:hover{
+color: blue;
+}
+.l7{
+cursor: pointer;
+}
+.l7:hover{
+color: blue;
+}
+.l8{
+cursor: pointer;
+}
+.l8:hover{
+color: blue;
+}
+.l9{
+cursor: pointer;
+}
+.l9:hover{
+color: blue;
+}
+.l10{
+cursor: pointer;
+}
+.l10:hover{
+color: blue;
+}
+.l11{
+cursor: pointer;
+}
+.l11:hover{
+color: blue;
+}
+.l12{
+cursor: pointer;
+}
+.l12:hover{
+color: blue;
+}
+.l13{
+cursor: pointer;
+}
+.l13:hover{
+color: blue;
+}
+.l14{
+cursor: pointer;
+}
+.l14:hover{
+color: blue;
+}
+.l15{
+cursor: pointer;
+}
+.l15:hover{
+color: blue;
+}
+.l16{
+cursor: pointer;
+}
+.l16:hover{
+color: blue;
+}
+.l17{
+cursor: pointer;
+}
+.l17:hover{
+color: blue;
+}
+.l18{
+cursor: pointer;
+}
+.l18:hover{
+color: blue;
+}
+.l19{
+cursor: pointer;
+}
+.l19:hover{
+color: blue;
+}
+.l20{
+cursor: pointer;
+}
+.l20:hover{
+color: blue;
+}
+.l21{
+cursor: pointer;
+}
+.l21:hover{
+color: blue;
+}
+.l22{
+cursor: pointer;
+}
+.l22:hover{
+color: blue;
+}
+.l23{
+cursor: pointer;
+}
+.l23:hover{
+color: blue;
+}
+.l24{
+cursor: pointer;
+}
+.l24:hover{
+color: blue;
+}
+.leitura{
+display: none;
+background-color: rgb(17, 247, 33);
+padding: 20px;
+border-radius: 15px;
+margin-top: -50px;
+}
+.h4{
+
+font-size: 25px;
+}
+.iframe{
+position: relative;
+height: 100%;
+width: 100%;
+margin-top: -10px;
+margin-left: 150px;
+}
+.divh{
+display: none;
+position: absolute;
+width: 30%;
+height: 80%;
+margin-left: 30%;
+margin-top: -250px;
+border-radius: 20%;
+background-color: rgb(12, 237, 229);
+}
+
+
+.hino7{
+
+
+width: 100%;
+height: 300%;
+margin-left: -1%;
+margin-top: -100px;
+
+
+}
+.musica{
+display: none;
+position: absolute;
+background-image: url("mar.gif");
+height: 280px;
+width: 300px;
+margin-top: -200px;
+margin-left: 280px;
+}
+#audio{
+margin-top: 190px;
+position: absolute;
+
+}
+
+
+.show{
+opacity: 1;
+filter: blur(0);
+transform: translateX();
+transition: all 1s;
+}
+.temp{
+color: brown;
+}
+
+
+
+
+
+@media(max-width: 330px){
+#input{
+    font-size: 10px;
+}
+.menu{
+    width: 100%;
+    font-size: 15px;
+}
+.caixa{
+    margin-top: 25%;
+    margin-left: 30%;
+}
+.divh{
+    margin-left: 10%;
+    width: 100%;
+}
+.musica{
+  margin-left: 20px;
+}
+ .pmenu1{
+    cursor: pointer;
+    font-size: 10px;
+    color: aliceblue;
+}
+ .pmenu2{
+    cursor: pointer;
+    font-size: 10px;
+    color: aliceblue;
+}
+.pmenu4{
+    cursor: pointer;
+    font-size: 10px;
+    color: aliceblue;
+}    
+
+
+
+
+
+
+}    
