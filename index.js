@@ -6,10 +6,18 @@ const myObserver = new IntersectionObserver((entryes) =>{
         entry.target.classList.add("show")
     
      }else{
-        entry.target.classList.remove("caixa"
-                                      
+        entry.target.classList.remove("caixa")
+    
+     }
+    
+    
+    
     })
-     });
+    
+    
+    
+    
+    });
     
     const elements=document.querySelectorAll(".caixa")
     elements.forEach((element) => myObserver.observe(element))
@@ -900,7 +908,7 @@ const myObserver = new IntersectionObserver((entryes) =>{
          document.querySelector(".divh").style.display="none"
          document.querySelector(".h4").textContent=""
            document.querySelector(".leitura").style.display="block"
-        document.querySelector(".cont").textContent=data
+        
         devoc=0
         clearInterval(anime)
          
