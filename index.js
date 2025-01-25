@@ -6,24 +6,16 @@ const myObserver = new IntersectionObserver((entryes) =>{
         entry.target.classList.add("show")
     
      }else{
-        entry.target.classList.remove("caixa")
-    
-     }
-    
-    
-    
+        entry.target.classList.remove("caixa"
+                                      
     })
-    
-    
-    
-    
-    });
+     });
     
     const elements=document.querySelectorAll(".caixa")
     elements.forEach((element) => myObserver.observe(element))
     
     devoc=0
-    var devocional="Devocional: 21/01/2025"
+    var devocional="Devocional: 25/01/2025"
     document.querySelector(".cont").textContent=devocional;
     var data = new Date();
      var horas=0
