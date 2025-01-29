@@ -1,849 +1,150 @@
-
-//-----------tela1---------------------------------------------------------------------   
-var btn = document.querySelector(".btn")
-var h1 = document.querySelector(".h1").textContent;
-var fala ="seja bem vindo ao bonos do canal dè estudo bíblico"
-const a1=document.querySelector(".a1")
-const a2=document.querySelector(".a2")
-const a3=document.querySelector(".a3")
-const btn2= document.querySelector(".btn2")
-const btn3= document.querySelector(".btn3")
-const som = document.querySelector(".som")
-const lista = document.querySelector(".lista")
-
-
-
-
-var array=[
-  /*0*/"boa madrugada",
-  /*1*/"boa madrugada",
-  /*2*/"boa madrugada",
-  /*3*/"boa madrugada",
-  /*4*/"boa madrugada",
-  /*5*/"bom dia",
-  /*6*/"bom dia",
-  /*7*/"bom dia",
-  /*8*/"bom dia",
-  /*9*/"bom dia",
-  /*10*/"bom dia",
-  /*11*/"bom dia",
-  /*12*/"boa tarde",
-  /*13*/"boa tarde",
-  /*14*/"boa tarde",
-  /*15*/"boa tarde",
-  /*16*/"boa tarde",
-  /*17*/"boa tarde",
-  /*18*/"boa noite",
-  /*19*/"boa noite",
-  /*20*/"boa noite",
-  /*21*/"boa noite",
-  /*22*/"boa noite",
-  /*23*/"boa noite",
-  ]
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="data:image/jpeg;base64,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">
+  <link rel="stylesheet" href="bonos.css">
+  <title>Canal estudo Biblico Bonos</title>
   
-  var lovor=[
-  /*0*/"Quando o Mundo Cai ao Meu Redor.mp3",
-  /*1*/"Vai Valer a Pena.mp3",
-  /*2*/"Entre a Fé e a Razão.mp3",
-  /*3*/"Maria Marçal Deserto.mp3",
-  /*4*/"Rompendo em fé.mp3",
-  /*5*/"GERSON RUFINO.mp3",
-  /*6*/"Gratidão.mp3",
-  /*7*/"ELE PASSOU LÁ EM CASA.mp3",
-  /*8*/"Com Ele.mp3",
-  /*9*/"A Melhor Escolha.mp3",
-  /*10*/"O Amigo.mp3",
-  /*11*/"Libertação.mp3",
-  /*12*/"O Rei e o Ladrão.mp3",
-  /*13*/"Sem Palavras.mp3",
-  /*14*/"Deus e Eu.mp3",
-  /*15*/"Geração Florida.mp3",
-  /*16*/"Quase Morri.mp3",
-  /*17*/"FRENTE A FRENTE.mp3",
-  /*18*/"CONFIDENCIA.mp3",
-  /*19*/"Sabe Filho.mp3",
-  /*20*/"jo.mp3",
-  /*21*/"É adorar.mp3",
-  /*22*/"Sinceridade.mp3",
-  /*23*/"Paulo e Silas.mp3",
-  /*24*/"Fica Tranquilo.mp3",
-  /*25*/"Que amor é esse.mp3",
-  /*26*/"Minha essência.mp3",
-  /*27*/"teu amor.mp3",
-  /*28*/"Tua Presença.mp3",
-  /*29*/" Além do Que Sonhei.mp3",
-  /*30*/"Quem Era Eu.mp3",
-  /*31*/"Liberta Me de Mim.mp3",
-  /*32*/"Aquieta Minhalma.mp3",
-  /*33*/"Quero Conhecer Jesus.mp3",
-  /*34*/"Não Pare.mp3",
-  /*35*/"ISADORA POMPEO.mp3",
-  /*36*/"Ninguém Explica Deus.mp3",
-  /*3837*/"arvore Cortada.mp3",
-  /*39*/"Me ajude a melhorar.mp3",
-  /*40*/"",
-  /*41*/"",
-  /*42*/"",
-  /*43*/"",
-  /*44*/"",
-  /*45*/"",
-  /*46*/"",
-  /*47*/"",
-  /*48*/"",
-  /*49*/"",
-  /*50*/"",
-  /*5*/"",
+  <script src="bonos.js" defer></script>
+
+
+</head>
+<body >
+  <br>
+  <!--<div align=center>Visualizações&nbsp;&nbsp;&nbsp;&nbsp;<img src='https://contador.s12.com.br/img-40CA7yC19Z232900-61.gif' border='0' alt='contador de visitantes'></a><script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=40CA7yC19Z232900'></script></div>
+    ---><br><marquee behavior="" direction="">Edu.App     WhatsApp        81984242796</marquee>
   
+  <h1 class="h1" align="center">Bem vindo ao bonos</h1>
   
-  ]
-
-
-btn.addEventListener("click",() =>{
-var input = document.querySelector(".input").value
-
-
-
-document.querySelector(".tela1").style.display="block"
-
-
-horas = dat.getHours()
-
-var falou= array[horas];
-
-setInterval(() => {
-
-        
-       
-      
-        
-        if(horas==0){
-          document.body.style.backgroundColor="rgb(48, 65, 75)"
-        };
-        if(horas==1){
-          document.body.style.backgroundColor="rgb(48, 65, 75)"
-        };
-        if(horas==2){
-          document.body.style.backgroundColor="rgb(48, 65, 75)"
-        };
-        if(horas==3){
-          document.body.style.backgroundColor="rgb(48, 65, 75)"
-        };
-        if(horas==4){
-          document.body.style.backgroundColor="rgb(48, 65, 75)" 
-        };
-        if(horas==5){
-          document.body.style.backgroundColor="rgb(20, 128, 191)" 
-        };
-        if(horas==6){
-          document.body.style.backgroundColor="rgb(20, 128, 191)" 
-        };
-        if(horas==7){
-          document.body.style.backgroundColor="rgb(20, 128, 191)" 
-        };
-        if(horas==8){
-          document.body.style.backgroundColor="rgb(46, 175, 250)" 
-        };
-        if(horas==9){
-          document.body.style.backgroundColor="rgb(46, 175, 250))" 
-        };
-        if(horas==10){
-          document.body.style.backgroundColor="rgb(46, 175, 250))"
-        };
-        if(horas==11){
-          document.body.style.backgroundColor="rgb(46, 175, 250)"
-        };
-        if(horas==12){
-          document.body.style.backgroundColor="rgb(46, 175, 250)" 
-        };
-        if(horas==13){
-          document.body.style.backgroundColor="rgb(46, 175, 250)" 
-        };
-        if(horas==14){
-          document.body.style.backgroundColor="rgb(46, 175, 250)" 
-        };
-        if(horas==15){
-          document.body.style.backgroundColor="rgb(55, 55, 132)" 
-        };
-        if(horas==16){
-          document.body.style.backgroundColor="rgb(55, 55, 132)" 
-        };
-        if(horas==17){
-          document.body.style.backgroundColor="rgb(55, 55, 132)"
-        };
-        if(horas==18){
-          document.body.style.backgroundColor="rgb(55, 55, 132)" 
-        };
-        if(horas==19){
-          document.body.style.backgroundColor="rgb(48, 65, 75)"
-        };
-        if(horas==20){
-          document.body.style.backgroundColor="rgb(48, 65, 75)" 
-        };
-        if(horas==21){
-          document.body.style.backgroundColor="rgb(48, 65, 75)" 
-        };
-        if(horas==22){
-          document.body.style.backgroundColor="rgb(48, 65, 75)" 
-        };
-        if(horas==23){
-          document.body.style.backgroundColor="rgb(48, 65, 75)" 
-        };
-        var setinput= document.querySelector(".input")
-        setinput.value=""
-       
-
-    }, 1000);
+  <div class="caixa">
+    <p>Coloque seu Nome</p><br>
+    <input class="input" type="text"><br>
+    <button class="btn" >Click</button><br>
     
 
-if ('speechSynthesis', ne window) {
-const utterance = new SpeechSynthesisUtterance(falou+" "+input+" "+fala);
-utterance.lang = 'pt-BR';
-
-speechSynthesis.speak(utterance);
-} else {
-alert('Desculpe, seu navegador não suporta a API Web Speech.');
-}
-
-document.querySelector(".caixa").style.display="none";
-document.querySelector(".menu").style.display="block"
-
-var timer=0
-var time = setInterval(() => {
-if(timer==0){
-
-
-utterance.lang = 'pt-BR';
-
-speechSynthesis.speak(utterance);
-a1.style.backgroundColor="gold"
-a2.style.backgroundColor=""
-a3.style.backgroundColor=""
-timer++
-
-}else{
-if(timer==1){
-a1.style.backgroundColor=""
-a2.style.backgroundColor="gold"
-a3.style.backgroundColor=""
-const utterance = new SpeechSynthesisUtterance("mensagem você tem as opções das mensagem que e a palavra de Deus");
-utterance.lang = 'pt-BR';
-
-speechSynthesis.speak(utterance);
-timer++
-}else{
-if(timer==2){
-a1.style.backgroundColor=""
-a2.style.backgroundColor=""
-a3.style.backgroundColor="gold"
-const utterance = new SpeechSynthesisUtterance("som gospel você  tem as 40 opções seleção  de escolher os lovores que quer ouvir,  ou escolher auto play pra tocar a lista");
-utterance.lang = 'pt-BR';
-
-speechSynthesis.speak(utterance);
-timer++
-}else{
-if(timer==3){
-const utterance = new SpeechSynthesisUtterance("este saite não tem laique pois ele foi feito para honra e gloria pra Jesus então da um gloria pra jesus ");
-utterance.lang = 'pt-BR';
-
-speechSynthesis.speak(utterance);
-a1.style.backgroundColor=""
-a2.style.backgroundColor=""
-a3.style.backgroundColor=""
-timer=0
-clearInterval(time)
-
-};
-
-};
-
-};
-
-}
-
-
-
- 
-}, 7000); 
-
-
-
-});
-
-
-
-
-  a2.addEventListener("click", () =>{
-
-    document.querySelector(".tela1").style.display="none"
-    document.querySelector(".tela2").style.display="block"
-
-  });
+  </div>
+  <header class="tela">
     
-  a3.addEventListener("click", () =>{
-    document.querySelector(".som").classList.add("show")
-    document.querySelector(".primeiro-audio").style.display="none"
+  
+  <div class="menu">
+    <table>
+      <tr>
+        <td>
+          
+          <a class="a1" href="index.html"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/></svg>Menu</a> &nbsp;&nbsp;&nbsp; <a class="a2" href="#">mensagem</a>&nbsp;&nbsp;&nbsp;<a class="a3" href="#">Som gospel</a>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+  <div class="som">
+     <td class="cotroles">
+        <button class="btn2" >Seleções</button>&nbsp;&nbsp;<button class="btn3" onclick=" Altoplay()" >Auto play</button>
+     </td>
+     </div>
+      <div class="primeiro-audio">
+      <p class="rotulo"></p>
+      <button class="voltar"> <img src="voltar.jpg" alt=""> </button> &nbsp;&nbsp;<p class="corrente">0:00</p><p class="duracao">/0:00</p><button class="proximo"><img src="proximo.jpg" alt="" srcset=""></button>
+      <tr>
+
+      </tr>
+       <td>
+               <img src="play.jpg"  id="playpausebtn"><img class="stop" src="stop.jpg" alt="" srcset="">
+        </td>
     
-  alert
-  
-  })
-
-// sistema de audio -seleção----tela1---------
-var audio = document.querySelector(".audio")
-var audio1 = document.querySelector(".audio1")
-var l1 = document.querySelector(".l1")
-var l2 = document.querySelector(".l2")
-var l3 = document.querySelector(".l3")
-var l4 = document.querySelector(".l4")
-var l5 = document.querySelector(".l5")
-var l6 = document.querySelector(".l6")
-var l7 = document.querySelector(".l7")
-var l8 = document.querySelector(".l8")
-var l9 = document.querySelector(".l9")
-var l10 = document.querySelector(".l10")
-var l11 = document.querySelector(".l11")
-var l12 = document.querySelector(".l12")
-var l13 = document.querySelector(".l13")
-var l14 = document.querySelector(".l14")
-var l15 = document.querySelector(".l15")
-var l16 = document.querySelector(".l16")
-var l17 = document.querySelector(".l17")
-var l18 = document.querySelector(".l18")
-var l19 = document.querySelector(".l19")
-var l20 = document.querySelector(".l20")
-var l21 = document.querySelector(".l21")
-var l22 = document.querySelector(".l22")
-var l23 = document.querySelector(".l23")
-var l24 = document.querySelector(".l24")
-var l25 = document.querySelector(".l25")
-var l26 = document.querySelector(".l26")
-var l27 = document.querySelector(".l27")
-var l28 = document.querySelector(".l28")
-var l29 = document.querySelector(".l29")
-var l30 = document.querySelector(".l30")
-var l31 = document.querySelector(".l31")
-var l32 = document.querySelector(".l32")
-var l33 = document.querySelector(".l33")
-var l34 = document.querySelector(".l34")
-var l35 = document.querySelector(".l35")
-var l36 = document.querySelector(".l36")
-var l37 = document.querySelector(".l37")
-var l38 = document.querySelector(".l38")
-var l39 = document.querySelector(".l39")
-var l40 = document.querySelector(".l40")
-var l41 = document.querySelector(".l41")
-var audio2 = document.querySelector(".audio2")
-var hor="";
-var min="";
-var seg="";
-var correntTimerhor="";
-var correntTimermin="";
-var correntTimerseg="";
-var time=  setInterval(() => {
-
-var stop = document.querySelector(".stop")
-stop.addEventListener("click", () =>{
-  audio.src=lovor[0]
-    audio.stop()
-})
-
-
-
-hor= Math.floor(audio2.duration / 3600)
-min= Math.floor(audio2.duration / 60)
-seg= Math.floor((((audio2.duration / 60) % 1) *60))
-
-correntTimerhor= Math.floor((audio2.currentTime / 3600))
-correntTimermin= Math.floor((audio2.currentTime / 60))
-correntTimerseg= Math.floor(((((audio2.currentTime)/60)%1)*60) )
-
-
-
-var temp= correntTimermin+":"+correntTimerseg
-var final= min+":"+seg
-if (temp==final) {
- 
- audio2.style.display="none"
- clearInterval(time)
-
-}
-
- 
-
-}, 100);
-
-
-
-
-btn2.addEventListener("click",()=>{
-
-document.querySelector(".lista").style.display="block"
-som.classList.remove("show")
-
-}) 
-l1.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[0]
-lista.style.display="none"
-
-})
-l2.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[1]
-lista.style.display="none"
-
-})
-l3.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[2]
-lista.style.display="none"
-
-}) 
-l4.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[3]
-lista.style.display="none"
-
-})
-l15.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[4]
-lista.style.display="none"
-
-})
-l6.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[5]
-lista.style.display="none"
-
-})
-l7.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[6]
-lista.style.display="none"
-
-})
-l8.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[7]
-lista.style.display="none"
-
-})
-l9.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[8]
-lista.style.display="none"
-
-})
-l10.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[9]
-lista.style.display="none"
-
-}) 
-l11.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[10]
-lista.style.display="none"
-
-}) 
-l12.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[11]
-lista.style.display="none"
-
-})
-l13.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[12]
-lista.style.display="none"
-
-}) 
-l14.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[13]
-lista.style.display="none"
-
-})
-l15.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[14]
-lista.style.display="none"
-
-})
-l16.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[15]
-lista.style.display="none"
-
-})
-l17.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[16]
-lista.style.display="none"
-
-})
-l18.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[17]
-lista.style.display="none"
-
-})
-l19.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[18]
-lista.style.display="none"
-
-})
-l20.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[19]
-lista.style.display="none"
-
-})
-l21.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[20]
-lista.style.display="none"
-
-})
-l22.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[21]
-lista.style.display="none"
-
-})
-l23.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[22]
-lista.style.display="none"
-
-})
-l24.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[23]
-lista.style.display="none"
-
-})
-l25.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[24]
-lista.style.display="none"
-
-})
-l26.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[25]
-lista.style.display="none"
-
-})
-l27.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[26]
-lista.style.display="none"
-
-})
-l28.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[27]
-lista.style.display="none"
-
-})
-l29.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[28]
-lista.style.display="none"
-
-})
-l30.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[29]
-lista.style.display="none"
-
-})
-l31.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[30]
-lista.style.display="none"
-
-})
-l32.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[31]
-lista.style.display="none"
-
-})
-l33.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[32]
-lista.style.display="none"
-
-})
-l34.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[33]
-lista.style.display="none"
-
-})
-l35.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[34]
-lista.style.display="none"
-
-})
-l36.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[35]
-lista.style.display="none"
-
-})
-l37.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[36]
-lista.style.display="none"
-
-})
-l38.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[37]
-lista.style.display="none"
-
-})
-l39.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[38]
-lista.style.display="none"
-
-})
-l40.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[39]
-lista.style.display="none"
-
-})
-l41.addEventListener("click", ()=>{
-audio2.style.display="block"
-audio2.src=lovor[40]
-lista.style.display="none"
-
-})
-// final da seleção de lovores-----------------
-
-var troca=0
-const botao =document.querySelector(".PausePlay")
-var hor1=""
-var min1=""
-var seg1=""
-var correntTimerhor1=""
-var correntTimermin1="";
-var correntTimerseg1="";
-
-var duracao =document.querySelector(".duracao")
-var corrente= document.querySelector(".corrente")
-var voltar= document.querySelector(".voltar")
-var proximo = document.querySelector(".proximo")
-
-
-
-
-
-     var audio,playbtn, seek_bar;
-     function initAudioPlayr(){
-        audio = new Audio();
-        audio.src=""
-        audio.loop = true;
-        audio.play();
-        //mudar objeto referente
-        playbtn= document.getElementById("playpausebtn");
-        playbtn.addEventListener("click",playPause)
-     }
-     function playPause(){
-        
-
-        if(audio.paused){
-            audio.src=lovor[troca]    
-            audio.play();
-           playbtn.src="pause.jpg"
-           var time1=  setInterval(() => {
-  
-  
-   
-
-  hor1= Math.floor(audio.duration / 3600)
-  min1= Math.floor(audio.duration / 60)
-  seg1= Math.floor((((audio.duration / 60) % 1) *60))
-
-   correntTimerhor1= Math.floor((audio.currentTime / 3600))
-   correntTimermin1= Math.floor((audio.currentTime / 60))
-var salva= correntTimerseg1= Math.floor(((((audio.currentTime)/60)%1)*60) )
-
- 
-
- var temp1= correntTimermin1+":"+correntTimerseg1
- var final1= min1+":"+seg1
-  if (temp1==final1) {
-       
-      troca++
-      audio.src=lovor[troca]
-      audio.play()
-
-  }
-  duracao.textContent="/"+min1+":"+seg1
-  corrente.textContent=correntTimermin1+":"+salva
-
-  
-}, 100);
-         
-        }else {
-             audio.pause();                
-            playbtn.src="play.jpg";
-            
-        
-          }  
-        
-
-
-     }
-
-voltar.addEventListener("click", () => {
-if (troca==41) {
-
-} else {
-troca--
-audio.src=lovor[troca]
-audio.play()  
-}
-
-})
-proximo.addEventListener("click", () => {
-if (troca==41) {
-troca=0
-} else {
-troca++
-audio.src=lovor[troca]
-audio.play() 
-}
-
-})
-
-// agora sera o auto play lista
-btn3.addEventListener("click", () =>{
-document.querySelector(".primeiro-audio").style.display="block"
-som.classList.remove("show")
-
-playbtn.innerHTML="Play&#9658;";
-
-})
-
-
-  
-
-
-
-//---------------base1 tela 2-----------------------------------------------------------------------------------
-var janela1=  document.querySelector(".base1")
-var fechar = document.querySelector(".tab")
-
- 
-
-janela1.addEventListener("mouseover",() =>{
-  document.querySelector(".tab").classList.add("show")
-})
-fechar.addEventListener("mouseleave",() =>{
-  document.querySelector(".tab").classList.remove("show")
-})
-
-
-
-
-var menuPricipal= document.querySelector(".taba10")
-menuPricipal.addEventListener("click",() =>{
-  document.querySelector(".tela2").style.display="none"
-    document.querySelector(".tela1").style.display="block"
-
-})
-// ----trabalhando tabela na tela 2----------
-var palavra =[
- /*0*/ "á paz seja convosco, venho em Nome do Rei Jesus.",
- /*1*/ "Eis que vêm dias, diz o Senhor DEUS, em que enviarei fome sobre a terra; não fome de pão,",
- /*2*/ "nem sede de água, mas de ouvir as palavras do SENHOR.",
- /*3*/ "o tempo que foi profetizado jas a porta, Porque virá tempo em que não suportarão a sã doutrina;",
- /*4*/ "mas, tendo comichão nos ouvidos,amontoarão para si doutores conforme as suas próprias concupiscências;",
- /*5*/ "E desviarão os ouvidos da verdade, voltando às fábulas.",
- /*6*/ "Os que deixam a lei louvam o ímpio; porém os que guardam a lei contendem com eles.",
- /*7*/ "O que desvia os seus ouvidos de ouvir a lei, até a sua oração será abominável.",
- /*8*/ "Mas tu, sê sóbrio em tudo, sofre as aflições, faze a obra de um evangelista, cumpre o teu ministério.",
- /*9*/ "Hipócritas, bem profetizou Isaías a vosso respeito, dizendo:",
- /*10*/ "Este povo se aproxima de mim com a sua boca e me honra com os seus lábios, mas o seu coração está longe de mim.",
- /*11*/ "Mas, em vão me adoram, ensinando doutrinas que são preceitos dos homens.",
- /*12*/ "Deixai-os; são cegos condutores de cegos. Ora, se um cego guiar outro cego, ambos cairão na cova.",
- /*13*/ "O pecado de Judá está escrito com um ponteiro de ferro, com ponta de diamante, gravado na tábua do seu coração e nas pontas dos vossos altares.",
- /*14*/ "Assim diz o Senhor: Maldito o homem que confia no homem, e faz da carne o seu braço, e aparta o seu coração do Senhor!",
- /*15*/ "Ó Senhor, esperança de Israel, todos aqueles que te deixam serão envergonhados; os que se apartam de mim serão escritos sobre a terra;",
- /*16*/ "porque abandonam o Senhor, a fonte das águas vivas.",
-/*17*/ "Mas não escutaram, nem inclinaram os seus ouvidos; antes endureceram a sua cerviz, para não ouvirem, e para não receberem correção.",
-/*18*/ "Converte-te, ó Israel, ao SENHOR teu Deus; porque pelos teus pecados tens caído.",
-/*19*/ "Tomai convosco palavras, e convertei-vos ao Senhor; dizei-lhe: Tira toda a iniqüidade, e aceita o que é bom;",
-/*20*/ "e ofereceremos como novilhos os sacrifícios dos nossos lábios.",
-/*21*/ "Tocai a trombeta em Sião, e clamai em alta voz no meu santo monte; tremam todos os moradores da terra, porque o dia do SENHOR vem, já está perto;",
-/*22*/ "Ainda assim, agora mesmo diz o Senhor: Convertei-vos a mim de todo o vosso coração; e isso com jejuns, e com choro, e com pranto.",
-/*23*/ "E rasgai o vosso coração, e não as vossas vestes, e convertei-vos ao Senhor vosso Deus; porque ele é misericordioso, e compassivo,",
-/*24*/ "e tardio em irar-se, e grande em benignidade, e se arrepende do mal.",
-/*25*/ "Por que razão me mostras a iniqüidade, e me fazes ver a opressão? Pois que a destruição e a violência estão diante de mim, ",
-/*26*/ "havendo também quem suscite a contenda e o litígio.",
-/*27*/ "Tu és tão puro de olhos, que não podes ver o mal, e a opressão não podes contemplar. Por que olhas para os que procedem aleivosamente,",
-/*28*/ "e te calas quando o ímpio devora aquele que é mais justo do que ele?",
-/*29*/ "Porventura por isso esvaziará a sua rede e não terá piedade de matar as nações continuamente?",
-/*30*/ "Quem é este, que vem de Edom, de Bozra, com vestes tintas; este que é glorioso em sua vestidura, que marcha com a sua grande força? Eu, que falo em justiça, poderoso para salvar.",
-/*31*/ "Por que está vermelha a tua vestidura, e as tuas roupas como as daquele que pisa no lagar?",
-/*32*/ "E, depois destas coisas ouvi no céu uma grande voz de uma grande multidão, que dizia: Aleluia! A salvação, e a glória, e a honra, e o poder pertencem ao Senhor nosso Deus;",
-/*33*/ "E disse-me: Escreve: Bemaventurados aqueles que são chamados à ceia das bodas do Cordeiro. E disse-me: Estas são as verdadeiras palavras de Deus.",
-/*34*/ "E estava vestido de veste tingida em sangue; e o nome pelo qual se chama é A Palavra de Deus.",
-/*35*/ "E da sua boca saía uma aguda espada, para ferir com ela as nações; e ele as regerá com vara de ferro; e ele mesmo é o que pisa o lagar do vinho do furor e da ira do Deus Todo-Poderoso.",
-/*36*/ "Porque eu já estou sendo oferecido por aspersão de sacrifício, e o tempo da minha partida está próximo.",
-/*37*/ "Combati o bom combate, acabei a carreira, guardei a fé.",
-/*38*/ "Desde agora, a coroa da justiça me está guardada, a qual o Senhor, justo juiz, me dará naquele dia; e não somente a mim, mas também a todos os que amarem a sua vinda.",
-/*39*/"Eu conheço as tuas obras, e o teu amor, e o teu serviço, e a tua fé, e a tua paciência, e que as tuas últimas obras são mais do que as primeiras.",
-/*40*/" sela estas palavras pois poucos entenderam pois não são minhas ovelhas minhas ovelhas conhece a minha voz cajado não mata ovelha, lobo sim", 
-/*41*/"Quem tem ouvidos, ouça o que o Espírito diz às igrejas.",  
-
-
-
-]
-var tab1 = document.querySelector(".taba1")
-
-
-var passador =0;
-
-
-tab1.addEventListener("click", () => {
-  document.querySelector(".opcao1").style.display="block"
-  document.querySelector(".t2h1").textContent=" Carregando Arquivo....."
-  var pala = setInterval(() => {
-    
-    document.querySelector(".t2h1").textContent=palavra[passador]
-    
-    if ('speechSynthesis' in window) {
-      const utterance = new SpeechSynthesisUtterance(palavra[passador]);
-      utterance.lang = 'pt-BR';
-
-      speechSynthesis.speak(utterance);
-     } else {
-       alert('Desculpe, seu navegador não suporta a API Web Speech.');
-     }
+      </div>
+       <audio class="audio2" src="" controls></audio>
+       <div class="lista">
+      <p class="l1" >Quando o Mundo Cai ao Meu Redor</p>
+     <p class="l2" >Vai Valer a Pena</p>
+     <p class="l3" >Entre a Fé e a Razão</p>
+     <p class="l4">Maria Marçal Deserto</p>
+    <p class="l5">Rompendo em fé</p>
+    <p class="l6">GERSON RUFINO</p>
+    <p class="l7">Gratidão</p>
+    <p class="l8">ELE PASSOU LÁ EM CASA</p>
+    <p class="l9">Com Ele</p>
+    <p class="l10">A Melhor Escolha</p>
+    <p class="l11">O Amigo</p>
+    <p class="l12">Libertação</p>
+    <p class="l13">O Rei e o Ladrão</p>
+    <p class="l14">Sem Palavras</p>
+    <p class="l15">Deus e Eu</p>
+    <p class="l16">Geração Florida</p>
+    <p class="l17">Quase Morri</p>
+    <p class="l18">FRENTE A FRENTE</p>
+    <p class="l19">CONFIDENCIA</p>
+    <p class="l20">Sabe Filho</p>
+    <p class="l21">jó</p>
+    <p class="l22">É adorar</p>
+    <p class="l23">Sinceridade</p>
+    <p class="l24">Paulo e Silas</p>
+    <p class="l25">Fica Tranquilo</p>
+    <p class="l26">Que amor é esse</p>
+    <p class="l27">Minha essência </p>
+    <p class="l28">teu amor</p>
+    <p class="l29">Tua Presença</p>
+    <p class="l30">Além do Que Sonhei</p>
+    <p class="l31">Quem Era Eu</p>
+    <p class="l32">Liberta Me de Mim</p>
+    <p class="l33">Aquieta Minhalma</p>
+    <p class="l34">Quero Conhecer Jesus</p>
+    <p class="l35">Não Pare</p>
+    <p class="l36">ISADORA POMPEO</p>
+    <p class="l37">Ninguém Explica Deus</p>
+    <p class="l38">arvore Cortada</p>
+    <p class="l39">Me ajude a melhorar</p>
+    <p class="l40"></p>
+    <p class="l41"></p>
+
+  </div>
+  </header>
+ <!----começa tela 2--->
+
+
+
+
+  <header class="tela2">
      
-     if(palavra==42){
-      passador=0
-      clearInterval(pala)
-    }else{
-      passador++
-    }
-  }, 10000);
-  
- 
-})
+      <h1  align="center">
+      Canal Estudo Bíblico Mensagens
+      </h1>
+      <br>
+     <div class="menu1">
+        <table>
+          <tr>
+            <td>
+              <a class="base1" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                </svg>Menu
+                </a>
+            </td>
+          </tr>
+        </table>
+    
+      </div>
+      <div class="tab">
+        <a class="taba1" href="#"> O grande chamado</a><br>
+        <a class="taba2" href="#"></a><br>
+        <a class="taba3" href="#"></a><br>
+        <a class="taba4" href="#"></a><br>
+        <a class="taba5" href="#"></a><br>
+        <a class="taba6" href="#"></a><br>
+        <a class="taba7" href="#"></a><br>
+        <a class="taba8" href="#"></a><br>
+        <a class="taba9" href="#"></a><br>
+        <a class="taba10" href="#">Menu pricipal</a>
+      </div>
+      <div class="opcao1">
+         <h1 class="t2h1"></h1>
+      </div>
 
-
-
-
-
-window.addEventListener("load",initAudioPlayr);
+  </header>
+    
+  </body> 
+  <script src="bonos.js" ></script>
+</html>
